@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		04C346CA285B2D2200DA6636 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C346C9285B2D2200DA6636 /* AppDelegate.swift */; };
 		04C346CC285B2D2200DA6636 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C346CB285B2D2200DA6636 /* SceneDelegate.swift */; };
-		04C346CE285B2D2200DA6636 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C346CD285B2D2200DA6636 /* ViewController.swift */; };
+		04C346CE285B2D2200DA6636 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C346CD285B2D2200DA6636 /* MainViewController.swift */; };
 		04C346D1285B2D2200DA6636 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C346CF285B2D2200DA6636 /* Main.storyboard */; };
 		04C346D3285B2D2400DA6636 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C346D2285B2D2400DA6636 /* Assets.xcassets */; };
 		04C346D6285B2D2400DA6636 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C346D4285B2D2400DA6636 /* LaunchScreen.storyboard */; };
+		04C346DE285B312700DA6636 /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C346DD285B312700DA6636 /* WeatherTableViewCell.swift */; };
+		04E9569E285B3529007ACA84 /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9569D285B3529007ACA84 /* WeatherInfo.swift */; };
+		04E956A2285CA7D5007ACA84 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E956A1285CA7D5007ACA84 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04C346C6285B2D2200DA6636 /* WantedOnboardingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WantedOnboardingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C346C9285B2D2200DA6636 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04C346CB285B2D2200DA6636 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04C346CD285B2D2200DA6636 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04C346CD285B2D2200DA6636 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		04C346D0285B2D2200DA6636 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04C346D2285B2D2400DA6636 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04C346D5285B2D2400DA6636 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04C346D7285B2D2400DA6636 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C346DD285B312700DA6636 /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
+		04E9569D285B3529007ACA84 /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
+		04E956A1285CA7D5007ACA84 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		045E3EB3285EF79A0067687E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				04C346CD285B2D2200DA6636 /* MainViewController.swift */,
+				04C346DD285B312700DA6636 /* WeatherTableViewCell.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		045E3EB4285EF7A40067687E /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				04E956A1285CA7D5007ACA84 /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		04C346BD285B2D2200DA6636 = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +81,31 @@
 			children = (
 				04C346C9285B2D2200DA6636 /* AppDelegate.swift */,
 				04C346CB285B2D2200DA6636 /* SceneDelegate.swift */,
-				04C346CD285B2D2200DA6636 /* ViewController.swift */,
+				04E9569F285CA407007ACA84 /* Scene */,
+				04E956A0285CA410007ACA84 /* Entity */,
 				04C346CF285B2D2200DA6636 /* Main.storyboard */,
 				04C346D2285B2D2400DA6636 /* Assets.xcassets */,
 				04C346D4285B2D2400DA6636 /* LaunchScreen.storyboard */,
 				04C346D7285B2D2400DA6636 /* Info.plist */,
 			);
 			path = WantedOnboardingApp;
+			sourceTree = "<group>";
+		};
+		04E9569F285CA407007ACA84 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				045E3EB3285EF79A0067687E /* Main */,
+				045E3EB4285EF7A40067687E /* Detail */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		04E956A0285CA410007ACA84 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				04E9569D285B3529007ACA84 /* WeatherInfo.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04C346CE285B2D2200DA6636 /* ViewController.swift in Sources */,
+				04C346DE285B312700DA6636 /* WeatherTableViewCell.swift in Sources */,
+				04C346CE285B2D2200DA6636 /* MainViewController.swift in Sources */,
 				04C346CA285B2D2200DA6636 /* AppDelegate.swift in Sources */,
+				04E956A2285CA7D5007ACA84 /* DetailViewController.swift in Sources */,
+				04E9569E285B3529007ACA84 /* WeatherInfo.swift in Sources */,
 				04C346CC285B2D2200DA6636 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
